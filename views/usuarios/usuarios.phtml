@@ -1,0 +1,66 @@
+<?php
+
+require_once "views/templates/header.phtml";
+require_once "views/templates/sidebar.phtml";
+
+?>
+
+<div class="content">
+
+    <?php require_once "views/templates/navbar.phtml"; ?>
+
+    <div class="main-content">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+
+            <h3>
+                <i class="fas fa-users"></i>
+                Gestión de Usuarios
+            </h3>
+
+            <button class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modalCrearUsuario">
+                <i class="fas fa-user-plus me-2"></i>
+                Agregar Usuario
+
+            </button>
+
+        </div>
+
+        <div class="card shadow-sm">
+
+            <div class="card-body">
+
+                <table class="table table-striped">
+
+                    <thead>
+
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Usuario</th>
+                            <th>Rol</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<?php require_once "views/templates/footer.phtml"; ?>
+<?php require_once "modal_crear.phtml"; ?>
+<?php require_once "modal_editar.phtml"; ?>

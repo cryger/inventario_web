@@ -1,0 +1,127 @@
+<?php
+
+require_once "models/area.php";
+
+$areas = Area::listar();
+
+?>
+
+<div class="modal fade"
+     id="modalCrearEstructura"
+     tabindex="-1">
+
+    <div class="modal-dialog modal-lg">
+
+        <div class="modal-content">
+
+            <form id="formCrearEstructura">
+
+                <div class="modal-header bg-primary text-white">
+
+                    <h5 class="modal-title">
+                        Nueva Estructura
+                    </h5>
+
+                    <button type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="row">
+
+                        <div class="col-md-6 mb-3">
+
+                            <label class="form-label">
+                                √Årea
+                            </label>
+
+                            <select
+                                name="id_area"
+                                class="form-select"
+                                required>
+                            
+                                <option value="">
+                                    Seleccione un ®¢rea
+                                </option>
+                            
+                                <?php foreach($areas as $area): ?>
+                            
+                                    <?php if($area["estado"] == 1): ?>
+                            
+                                        <option value="<?= $area["id_area"]; ?>">
+                            
+                                            <?= $area["nombre_area"]; ?>
+                            
+                                        </option>
+                            
+                                    <?php endif; ?>
+                            
+                                <?php endforeach; ?>
+                            
+                            </select>
+
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+
+                            <label class="form-label">
+                                C√≥digo
+                            </label>
+
+                            <input type="text"
+                                   name="codigo"
+                                   class="form-control">
+
+                        </div>
+
+                        <div class="col-12 mb-3">
+
+                            <label class="form-label">
+                                Nombre de la Estructura
+                            </label>
+
+                            <input type="text"
+                                   name="nombre_estructura"
+                                   class="form-control"
+                                   required>
+
+                        </div>
+
+                        <div class="col-12">
+
+                            <label class="form-label">
+                                Descripci√≥n
+                            </label>
+
+                            <textarea name="descripcion"
+                                      class="form-control"
+                                      rows="4"></textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="submit"
+                            class="btn btn-primary">
+
+                        Guardar
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>

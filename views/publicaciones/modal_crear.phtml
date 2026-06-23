@@ -1,0 +1,111 @@
+<div class="modal fade"
+     id="modalCrearPublicacion"
+     tabindex="-1">
+
+    <div class="modal-dialog modal-xl">
+
+        <div class="modal-content">
+
+            <form id="formCrearPublicacion"
+                  enctype="multipart/form-data">
+
+                <div class="modal-header bg-info text-white">
+
+                    <h5 class="modal-title">
+                        Nueva Publicación
+                    </h5>
+
+                    <button type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="row">
+
+                        <div class="col-md-6 mb-3">
+
+                            <label>Área</label>
+
+                            <select name="id_area"
+                                    class="form-select">
+
+                            </select>
+
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+
+                            <label>Estructura</label>
+
+                            <select name="id_estructura"
+                                    class="form-select">
+
+                            </select>
+
+                        </div>
+
+                        <div class="col-12 mb-3">
+
+                            <label>Título</label>
+
+                            <input type="text"
+                                   name="titulo"
+                                   class="form-control">
+
+                        </div>
+
+                        <div class="col-12 mb-3">
+
+                            <label>Descripción</label>
+
+                            <textarea name="descripcion"
+                                      class="form-control"
+                                      rows="4"></textarea>
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <label>Documento</label>
+
+                            <input type="file"
+                                   name="documento"
+                                   class="form-control">
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <label>Vigencia</label>
+
+                            <input type="text"
+                                   name="vigencia"
+                                   class="form-control">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="submit"
+                            class="btn btn-info text-white">
+
+                        Publicar
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>

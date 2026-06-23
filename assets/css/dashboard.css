@@ -1,0 +1,397 @@
+/* ==========================================
+   INVENTARIO WEB
+   ESE HOSPITAL SAN JOSÉ DEL GUAVIARE
+========================================== */
+
+:root{
+
+    --azul-principal:#0056b3;
+    --azul-secundario:#0A4D8C;
+
+    --verde:#198754;
+    --naranja:#fd7e14;
+    --rojo:#dc3545;
+
+    --gris-fondo:#f4f6f9;
+    --gris-texto:#495057;
+
+    --blanco:#ffffff;
+
+    --shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+/* ==========================================
+   GENERAL
+========================================== */
+
+body{
+
+    margin:0;
+    padding:0;
+
+    background:var(--gris-fondo);
+
+    font-family:
+        "Segoe UI",
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+
+    color:var(--gris-texto);
+
+}
+
+.wrapper{
+
+    display:flex;
+    min-height:100vh;
+
+}
+
+/* ==========================================
+   SIDEBAR
+========================================== */
+
+.sidebar{
+
+    width:280px;
+
+    min-height:100vh;
+
+    background:linear-gradient(
+        180deg,
+        #003f88,
+        #0056b3
+    );
+
+    color:white;
+
+    box-shadow:4px 0 20px rgba(0,0,0,.15);
+
+}
+
+.logo{
+
+    text-align:center;
+
+    padding:25px 15px;
+
+    background:rgba(255,255,255,.08);
+
+    border-bottom:1px solid rgba(255,255,255,.1);
+
+}
+
+.logo img{
+
+    width:90px;
+
+    margin-bottom:10px;
+
+}
+
+.logo h4{
+
+    margin-bottom:5px;
+
+    font-weight:700;
+
+}
+
+.logo small{
+
+    opacity:.85;
+
+}
+
+.sidebar .nav{
+
+    padding:20px;
+
+}
+
+.sidebar .nav-link{
+
+    color:white;
+
+    padding:14px 18px;
+
+    margin-bottom:8px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+    font-size:15px;
+
+}
+
+.sidebar .nav-link i{
+
+    width:25px;
+
+}
+
+.sidebar .nav-link:hover{
+
+    background:rgba(255,255,255,.15);
+
+    transform:translateX(4px);
+
+}
+
+.sidebar .nav-link.active-menu{
+
+    background:white;
+
+    color:var(--azul-principal) !important;
+
+    font-weight:600;
+
+}
+
+.sidebar hr{
+
+    border-color:rgba(255,255,255,.2);
+
+}
+
+/* ==========================================
+   CONTENIDO
+========================================== */
+
+.content{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar-admin{
+
+    background:white;
+
+    padding:15px 25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+}
+
+.navbar-admin h5{
+
+    margin:0;
+
+    font-weight:600;
+
+}
+
+.usuario-info{
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+.usuario-info i{
+
+    color:var(--azul-principal);
+
+    margin-right:6px;
+
+}
+
+/* ==========================================
+   MAIN
+========================================== */
+
+.main-content{
+
+    padding:30px;
+
+}
+
+/* ==========================================
+   TARJETAS
+========================================== */
+
+.card-dashboard{
+
+    border:none;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.card-dashboard:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.card-dashboard .card-body{
+
+    padding:25px;
+
+}
+
+.card-dashboard h6{
+
+    font-size:14px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.5px;
+
+}
+
+.card-dashboard h2{
+
+    font-size:36px;
+
+    margin-top:10px;
+
+    margin-bottom:10px;
+
+}
+
+.card-dashboard i{
+
+    font-size:40px;
+
+    opacity:.8;
+
+}
+
+/* ==========================================
+   COLORES TARJETAS
+========================================== */
+
+.card-usuarios{
+
+    background:linear-gradient(
+        135deg,
+        #0d6efd,
+        #4d94ff
+    );
+
+    color:white;
+
+}
+
+.card-areas{
+
+    background:linear-gradient(
+        135deg,
+        #198754,
+        #42c67a
+    );
+
+    color:white;
+
+}
+
+.card-publicaciones{
+
+    background:linear-gradient(
+        135deg,
+        #fd7e14,
+        #ffb347
+    );
+
+    color:white;
+
+}
+
+.card-documentos{
+
+    background:linear-gradient(
+        135deg,
+        #dc3545,
+        #ff6b81
+    );
+
+    color:white;
+
+}
+
+/* ==========================================
+   PANEL PRINCIPAL
+========================================== */
+
+.panel-principal{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    margin-top:25px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.panel-principal h4{
+
+    color:var(--azul-principal);
+
+    font-weight:700;
+
+}
+
+.panel-principal ul{
+
+    margin-top:15px;
+
+}
+
+.panel-principal ul li{
+
+    margin-bottom:8px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+    .sidebar{
+
+        width:80px;
+
+    }
+
+    .sidebar .logo h4,
+    .sidebar .logo small,
+    .sidebar .nav-link span{
+
+        display:none;
+
+    }
+
+}

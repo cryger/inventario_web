@@ -1,0 +1,93 @@
+<div class="modal fade"
+     id="modalEditarEstructura"
+     tabindex="-1">
+
+    <div class="modal-dialog modal-lg">
+
+        <div class="modal-content">
+
+            <form id="formEditarEstructura">
+
+                <input type="hidden"
+                       name="id_estructura">
+
+                <div class="modal-header bg-warning">
+
+                    <h5 class="modal-title">
+                        Editar Estructura
+                    </h5>
+
+                    <button type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="row">
+
+                        <div class="col-md-6 mb-3">
+
+                            <label>Área</label>
+
+                            <select name="id_area"
+                                    class="form-select">
+
+                            </select>
+
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+
+                            <label>Código</label>
+
+                            <input type="text"
+                                   name="codigo"
+                                   class="form-control">
+
+                        </div>
+
+                        <div class="col-12 mb-3">
+
+                            <label>Estructura</label>
+
+                            <input type="text"
+                                   name="nombre_estructura"
+                                   class="form-control">
+
+                        </div>
+
+                        <div class="col-12">
+
+                            <label>Descripción</label>
+
+                            <textarea name="descripcion"
+                                      class="form-control"
+                                      rows="4"></textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="submit"
+                            class="btn btn-warning">
+
+                        Actualizar
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,81 @@
+<div class="modal fade"
+     id="modalEditarArea"
+     tabindex="-1">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <form id="formEditarArea">
+
+    <input type="hidden"
+           name="id_area"
+           id="edit_id_area">
+
+    <div class="modal-header bg-warning">
+
+        <h5 class="modal-title">
+            Editar Área
+        </h5>
+
+        <button type="button"
+                class="btn-close"
+                data-bs-dismiss="modal">
+        </button>
+
+    </div>
+
+    <div class="modal-body">
+
+        <div class="mb-3">
+
+            <label class="form-label">
+                Nombre del Área
+            </label>
+
+            <input type="text"
+                   name="nombre_area"
+                   id="edit_nombre_area"
+                   class="form-control"
+                   required>
+
+        </div>
+
+        <div class="mb-3">
+
+            <label class="form-label">
+                Descripción
+            </label>
+
+            <textarea
+                name="descripcion"
+                id="edit_descripcion"
+                class="form-control"
+                rows="4"></textarea>
+
+        </div>
+
+    </div>
+
+    <div class="modal-footer">
+
+        <button type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal">
+            Cancelar
+        </button>
+
+        <button type="submit"
+                class="btn btn-warning">
+            Actualizar
+        </button>
+
+    </div>
+
+</form>
+
+        </div>
+
+    </div>
+
+</div>

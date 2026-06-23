@@ -1,0 +1,51 @@
+<?php
+
+require_once "views/templates/header.phtml";
+require_once "views/templates/sidebar.phtml";
+
+?>
+
+<div class="content">
+
+<?php require_once "views/templates/navbar.phtml"; ?>
+
+<div class="main-content">
+
+    <h3 class="mb-4">
+
+        <i class="fas fa-history"></i>
+
+        Historial de Cambios
+
+    </h3>
+
+    <div class="card shadow-sm">
+
+        <div class="card-body">
+
+            <table class="table table-hover">
+
+                <thead>
+
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Usuario</th>
+                        <th>Módulo</th>
+                        <th>Acción</th>
+                    </tr>
+
+                </thead>
+
+                <tbody></tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<?php require_once "views/templates/footer.phtml"; ?>
