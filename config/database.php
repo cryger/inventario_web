@@ -3,9 +3,9 @@
 class Database
 {
     private $host = "localhost";
-    private $dbname = "esehsjg18_inventarioweb";
-    private $user = "esehsjg18_hsjg";
-    private $password = "cJG+8auIxt1H";
+    private $dbname = "";
+    private $user = "";
+    private $password = "";
 
     public function conectar()
     {
